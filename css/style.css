@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;          
+    flex-direction: row; /* Horizontal layout */
+    font-family: Arial, sans-serif;
+}
+
+/* Header on the left */
+.intro {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    padding: 20px;
+    background-color: #FF5733;
+    width: 250px;           /* Fixed width sidebar */
+    flex-shrink: 0;         
+}
+
+/* Logo */
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    color:rgb(12, 57, 107)
+}
+
+/* Navigation links */
+.intro a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.intro a:hover {
+    text-decoration: underline;
+}
+
+/* Main content on the right */
+section {
+    flex: 1;                
+    background-color: aqua;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;  
+}
+
+h3 {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Images container */
+.images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Individual images */
+.img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
